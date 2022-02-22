@@ -184,17 +184,17 @@ Returns `PeerId`.
 
 ### `createFromPubKey(pubKey)`
 
-- `publicKey: Buffer`
+- `publicKey: Uint8Array | string`
 
-Creates a Peer ID from a buffer containing a public key.
+Creates a Peer ID from a protobuf encoded public key.
 
 Returns `Promise<PeerId>`.
 
 ### `createFromPrivKey(privKey)`
 
-- `privKey: Buffer`
+- `privKey: Uint8Array | string`
 
-Creates a Peer ID from a buffer containing a private key.
+Creates a Peer ID from a protobuf encoded private key.
 
 Returns `Promise<PeerId>`.
 

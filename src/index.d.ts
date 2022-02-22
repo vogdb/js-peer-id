@@ -79,14 +79,14 @@ declare namespace PeerId {
   /**
    * Create PeerId from public key.
    *
-   * @param key - Public key, as Uint8Array or base64-encoded string.
+   * @param key - Public key, encoded as Protobuf (either Uint8Array or base64-encoded string).
    */
   function createFromPubKey (key: Uint8Array | string): Promise<PeerId>
 
   /**
    * Create PeerId from private key.
    *
-   * @param key - Private key, as Uint8Array or base64-encoded string.
+   * @param key - Private key, encoded as Protobuf (either Uint8Array or base64-encoded string).
    */
   function createFromPrivKey (key: Uint8Array | string): Promise<PeerId>
 
